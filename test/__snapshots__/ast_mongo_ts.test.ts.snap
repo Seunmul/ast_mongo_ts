@@ -7,7 +7,7 @@ exports[`AstMongo.ts mongoose-integer with real number 1`] = `[ValidationError: 
 exports[`AstMongo.ts with Aor aor Check if it has been removed 1`] = `null`;
 
 exports[`AstMongo.ts with Aor aor Create an Aor with valid record 1`] = `
-Object {
+{
   "__v": 0,
   "_id": "alice",
   "contact": "sip:6001@192.0.2.1:5060",
@@ -16,7 +16,7 @@ Object {
 `;
 
 exports[`AstMongo.ts with Aor aor Read it again 1`] = `
-Object {
+{
   "__v": 0,
   "_id": "alice",
   "contact": "sip:6001@192.0.2.1:5060",
@@ -25,7 +25,7 @@ Object {
 `;
 
 exports[`AstMongo.ts with Aor aor Read it back 1`] = `
-Object {
+{
   "__v": 0,
   "_id": "alice",
   "contact": "sip:6001@192.0.2.1:5060",
@@ -34,7 +34,7 @@ Object {
 `;
 
 exports[`AstMongo.ts with Aor aor Read it back 2`] = `
-Object {
+{
   "__v": 0,
   "_id": "alice",
   "contact": "sip:6001@192.0.2.1:5060",
@@ -43,16 +43,18 @@ Object {
 `;
 
 exports[`AstMongo.ts with Aor aor Update it 1`] = `
-Object {
-  "n": 1,
-  "nModified": 1,
-  "ok": 1,
+{
+  "acknowledged": true,
+  "matchedCount": 1,
+  "modifiedCount": 1,
+  "upsertedCount": 0,
+  "upsertedId": null,
 }
 `;
 
 exports[`AstMongo.ts with Cdr & Cel cdr Read them back 1`] = `
-Array [
-  Object {
+[
+  {
     "__v": 0,
     "accountcode": "",
     "amaflags": "DOCUMENTATION",
@@ -76,7 +78,79 @@ Array [
     "uniqueid": "asterisk-0.0",
     "userfield": "",
   },
-  Object {
+  {
+    "__v": 0,
+    "accountcode": "",
+    "amaflags": "DOCUMENTATION",
+    "answer": 1970-01-01T00:00:00.000Z,
+    "billsec": 0,
+    "channel": "PJSIP/6002-00000000",
+    "clid": "6002 <6002>",
+    "dcontext": "context1",
+    "disposition": "NO ANSWER",
+    "dst": "6001",
+    "dstchannel": "PJSIP/6001-00000001",
+    "duration": 0,
+    "end": 2017-01-01T08:57:57.262Z,
+    "lastapp": "Dial",
+    "lastdata": "PJSIP/6001",
+    "linkedid": "asterisk-0.0",
+    "peeraccount": "",
+    "sequence": 0,
+    "src": "6002",
+    "start": 2017-01-01T08:57:57.241Z,
+    "uniqueid": "asterisk-0.0",
+    "userfield": "",
+  },
+  {
+    "__v": 0,
+    "accountcode": "",
+    "amaflags": "DOCUMENTATION",
+    "answer": 1970-01-03T00:00:00.000Z,
+    "billsec": 0,
+    "channel": "PJSIP/6004-00000000",
+    "clid": "6004 <6004>",
+    "dcontext": "context1",
+    "disposition": "NO ANSWER",
+    "dst": "6003",
+    "dstchannel": "PJSIP/6003-00000001",
+    "duration": 0,
+    "end": 2017-01-03T08:57:58.262Z,
+    "lastapp": "Dial",
+    "lastdata": "PJSIP/6003",
+    "linkedid": "asterisk-0.0",
+    "peeraccount": "",
+    "sequence": 0,
+    "src": "6004",
+    "start": 2017-01-03T08:57:58.241Z,
+    "uniqueid": "asterisk-0.0",
+    "userfield": "",
+  },
+  {
+    "__v": 0,
+    "accountcode": "",
+    "amaflags": "DOCUMENTATION",
+    "answer": 1970-01-03T00:00:00.000Z,
+    "billsec": 0,
+    "channel": "PJSIP/6004-00000000",
+    "clid": "6004 <6004>",
+    "dcontext": "context1",
+    "disposition": "NO ANSWER",
+    "dst": "6003",
+    "dstchannel": "PJSIP/6003-00000001",
+    "duration": 0,
+    "end": 2017-01-03T08:57:58.262Z,
+    "lastapp": "Dial",
+    "lastdata": "PJSIP/6003",
+    "linkedid": "asterisk-0.0",
+    "peeraccount": "",
+    "sequence": 0,
+    "src": "6004",
+    "start": 2017-01-03T08:57:58.241Z,
+    "uniqueid": "asterisk-0.0",
+    "userfield": "",
+  },
+  {
     "__v": 0,
     "accountcode": "",
     "amaflags": "DOCUMENTATION",
@@ -104,8 +178,8 @@ Array [
 `;
 
 exports[`AstMongo.ts with Cdr & Cel cel Read log 1`] = `
-Array [
-  Object {
+[
+  {
     "__v": 0,
     "accountcode": "",
     "appdata": "",
@@ -128,7 +202,145 @@ Array [
     "uniqueid": "asterisk-0.4",
     "userfield": "",
   },
-  Object {
+  {
+    "__v": 0,
+    "accountcode": "",
+    "appdata": "",
+    "appname": "",
+    "channame": "PJSIP/6002-00000004",
+    "cid_ani": "",
+    "cid_dnid": "",
+    "cid_name": "",
+    "cid_num": "6002",
+    "cid_rdnis": "",
+    "context": "context1",
+    "eventname": "CHAN_START",
+    "eventtime": 2017-01-01T09:12:17.629Z,
+    "eventtype": 1,
+    "exten": "6001",
+    "extra": "",
+    "linkedid": "asterisk-0.4",
+    "peer": "",
+    "peeraccount": "",
+    "uniqueid": "asterisk-0.4",
+    "userfield": "",
+  },
+  {
+    "__v": 0,
+    "accountcode": "",
+    "appdata": "",
+    "appname": "",
+    "channame": "PJSIP/6002-00000004",
+    "cid_ani": "",
+    "cid_dnid": "",
+    "cid_name": "",
+    "cid_num": "6002",
+    "cid_rdnis": "",
+    "context": "context1",
+    "eventname": "CHAN_START",
+    "eventtime": 2017-01-01T09:12:17.629Z,
+    "eventtype": 1,
+    "exten": "6001",
+    "extra": "",
+    "linkedid": "asterisk-0.4",
+    "peer": "",
+    "peeraccount": "",
+    "uniqueid": "asterisk-0.4",
+    "userfield": "",
+  },
+  {
+    "__v": 0,
+    "accountcode": "",
+    "appdata": "",
+    "appname": "",
+    "channame": "PJSIP/6002-00000004",
+    "cid_ani": "",
+    "cid_dnid": "",
+    "cid_name": "",
+    "cid_num": "6002",
+    "cid_rdnis": "",
+    "context": "context1",
+    "eventname": "CHAN_START",
+    "eventtime": 2017-01-01T09:12:17.629Z,
+    "eventtype": 1,
+    "exten": "6001",
+    "extra": "",
+    "linkedid": "asterisk-0.4",
+    "peer": "",
+    "peeraccount": "",
+    "uniqueid": "asterisk-0.4",
+    "userfield": "",
+  },
+  {
+    "__v": 0,
+    "accountcode": "",
+    "appdata": "PJSIP/6001",
+    "appname": "Dial",
+    "channame": "PJSIP/6002-00000004",
+    "cid_ani": "6002",
+    "cid_dnid": "",
+    "cid_name": "",
+    "cid_num": "6002",
+    "cid_rdnis": "",
+    "context": "context1",
+    "eventname": "APP_START",
+    "eventtime": 2017-01-01T09:12:17.630Z,
+    "eventtype": 5,
+    "exten": "6001",
+    "extra": "",
+    "linkedid": "asterisk-0.4",
+    "peer": "",
+    "peeraccount": "",
+    "uniqueid": "asterisk-0.4",
+    "userfield": "",
+  },
+  {
+    "__v": 0,
+    "accountcode": "",
+    "appdata": "PJSIP/6001",
+    "appname": "Dial",
+    "channame": "PJSIP/6002-00000004",
+    "cid_ani": "6002",
+    "cid_dnid": "",
+    "cid_name": "",
+    "cid_num": "6002",
+    "cid_rdnis": "",
+    "context": "context1",
+    "eventname": "APP_START",
+    "eventtime": 2017-01-01T09:12:17.630Z,
+    "eventtype": 5,
+    "exten": "6001",
+    "extra": "",
+    "linkedid": "asterisk-0.4",
+    "peer": "",
+    "peeraccount": "",
+    "uniqueid": "asterisk-0.4",
+    "userfield": "",
+  },
+  {
+    "__v": 0,
+    "accountcode": "",
+    "appdata": "PJSIP/6001",
+    "appname": "Dial",
+    "channame": "PJSIP/6002-00000004",
+    "cid_ani": "6002",
+    "cid_dnid": "",
+    "cid_name": "",
+    "cid_num": "6002",
+    "cid_rdnis": "",
+    "context": "context1",
+    "eventname": "APP_START",
+    "eventtime": 2017-01-01T09:12:17.630Z,
+    "eventtype": 5,
+    "exten": "6001",
+    "extra": "",
+    "linkedid": "asterisk-0.4",
+    "peer": "",
+    "peeraccount": "",
+    "uniqueid": "asterisk-0.4",
+    "userfield": "",
+  },
+  {
     "__v": 0,
     "accountcode": "",
     "appdata": "PJSIP/6001",
@@ -155,8 +367,8 @@ Array [
 `;
 
 exports[`AstMongo.ts with Endpoint Set add an identify as realtime resources 1`] = `
-Array [
-  Object {
+[
+  {
     "__v": 0,
     "endpoint": "my_realtime_trunk",
     "match": "203.0.113.11",
@@ -165,8 +377,38 @@ Array [
 `;
 
 exports[`AstMongo.ts with Endpoint Set add an identify as realtime resources 2`] = `
-Array [
-  Object {
+[
+  {
+    "__v": 0,
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.11",
+  },
+  {
+    "__v": 0,
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.13",
+  },
+  {
+    "__v": 0,
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.12",
+  },
+  {
+    "__v": 0,
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.11",
+  },
+  {
+    "__v": 0,
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.12",
+  },
+  {
+    "__v": 0,
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.13",
+  },
+  {
     "__v": 0,
     "endpoint": "my_realtime_trunk",
     "match": "203.0.113.11",
@@ -175,13 +417,13 @@ Array [
 `;
 
 exports[`AstMongo.ts with Endpoint Set add multiple identifis as realtime resources 1`] = `
-Array [
-  Object {
+[
+  {
     "__v": 0,
     "endpoint": "my_realtime_trunk",
     "match": "203.0.113.12",
   },
-  Object {
+  {
     "__v": 0,
     "endpoint": "my_realtime_trunk",
     "match": "203.0.113.13",
@@ -190,18 +432,48 @@ Array [
 `;
 
 exports[`AstMongo.ts with Endpoint Set add multiple identifis as realtime resources 2`] = `
-Array [
-  Object {
+[
+  {
     "__v": 0,
     "endpoint": "my_realtime_trunk",
     "match": "203.0.113.11",
   },
-  Object {
+  {
+    "__v": 0,
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.13",
+  },
+  {
     "__v": 0,
     "endpoint": "my_realtime_trunk",
     "match": "203.0.113.12",
   },
-  Object {
+  {
+    "__v": 0,
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.11",
+  },
+  {
+    "__v": 0,
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.12",
+  },
+  {
+    "__v": 0,
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.13",
+  },
+  {
+    "__v": 0,
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.11",
+  },
+  {
+    "__v": 0,
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.12",
+  },
+  {
     "__v": 0,
     "endpoint": "my_realtime_trunk",
     "match": "203.0.113.13",
@@ -210,8 +482,8 @@ Array [
 `;
 
 exports[`AstMongo.ts with Endpoint Set clean up #1 1`] = `
-Array [
-  Object {
+[
+  {
     "__v": 0,
     "_id": "6002",
     "allow": "ulaw",
@@ -224,8 +496,8 @@ Array [
 `;
 
 exports[`AstMongo.ts with Endpoint Set clean up #1 2`] = `
-Array [
-  Object {
+[
+  {
     "__v": 0,
     "_id": "6002",
     "contact": "sip:6002@192.0.2.2:5060",
@@ -235,8 +507,8 @@ Array [
 `;
 
 exports[`AstMongo.ts with Endpoint Set clean up #1 3`] = `
-Array [
-  Object {
+[
+  {
     "__v": 0,
     "_id": "6002",
     "auth_type": "userpass",
@@ -246,21 +518,72 @@ Array [
 ]
 `;
 
-exports[`AstMongo.ts with Endpoint Set clean up #2 1`] = `Array []`;
+exports[`AstMongo.ts with Endpoint Set clean up #2 1`] = `[]`;
 
-exports[`AstMongo.ts with Endpoint Set clean up #2 2`] = `Array []`;
+exports[`AstMongo.ts with Endpoint Set clean up #2 2`] = `[]`;
 
-exports[`AstMongo.ts with Endpoint Set clean up #2 3`] = `Array []`;
+exports[`AstMongo.ts with Endpoint Set clean up #2 3`] = `[]`;
 
-exports[`AstMongo.ts with Endpoint Set clean up #3 1`] = `Array []`;
+exports[`AstMongo.ts with Endpoint Set clean up #3 1`] = `
+[
+  {
+    "__v": 0,
+    "_id": "639c14508c9692ed47170646",
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.13",
+  },
+  {
+    "__v": 0,
+    "_id": "639c14508c9692ed47170645",
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.12",
+  },
+  {
+    "__v": 0,
+    "_id": "639c14f76abd1ebf63ad4c7f",
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.11",
+  },
+  {
+    "__v": 0,
+    "_id": "639c14f86abd1ebf63ad4c82",
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.12",
+  },
+  {
+    "__v": 0,
+    "_id": "639c14f86abd1ebf63ad4c83",
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.13",
+  },
+  {
+    "__v": 0,
+    "_id": "639c164ae7b5806cbee27bca",
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.11",
+  },
+  {
+    "__v": 0,
+    "_id": "639c164ae7b5806cbee27bcd",
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.12",
+  },
+  {
+    "__v": 0,
+    "_id": "639c164ae7b5806cbee27bce",
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.13",
+  },
+]
+`;
 
 exports[`AstMongo.ts with Endpoint Set create an endpoint set #1 1`] = `
-Object {
+{
   "__v": 0,
   "_id": "6001",
   "allow": "ulaw",
   "aors": "6001",
-  "auth": Object {
+  "auth": {
     "__v": 0,
     "_id": "6001",
     "auth_type": "userpass",
@@ -273,12 +596,12 @@ Object {
 `;
 
 exports[`AstMongo.ts with Endpoint Set create an endpoint set #2 1`] = `
-Object {
+{
   "__v": 0,
   "_id": "6001",
   "allow": "ulaw",
   "aors": "6001",
-  "auth": Object {
+  "auth": {
     "__v": 0,
     "_id": "6001",
     "auth_type": "userpass",
@@ -291,8 +614,8 @@ Object {
 `;
 
 exports[`AstMongo.ts with StaticConfig add dial plans as StaticConfigs 1`] = `
-Array [
-  Object {
+[
+  {
     "__v": 0,
     "cat_metric": 2,
     "category": "context1",
@@ -302,7 +625,7 @@ Array [
     "var_name": "exten",
     "var_val": "_6.,1,NoOp()",
   },
-  Object {
+  {
     "__v": 0,
     "cat_metric": 2,
     "category": "context1",
@@ -312,7 +635,7 @@ Array [
     "var_name": "exten",
     "var_val": "_6.,n,Dial(PJSIP/\${EXTEN})",
   },
-  Object {
+  {
     "__v": 0,
     "cat_metric": 2,
     "category": "context1",
@@ -322,7 +645,7 @@ Array [
     "var_name": "exten",
     "var_val": "_6.,n,Hangup()",
   },
-  Object {
+  {
     "__v": 0,
     "cat_metric": 2,
     "category": "context1",
@@ -332,7 +655,7 @@ Array [
     "var_name": "exten",
     "var_val": "_7.,1,NoOp()",
   },
-  Object {
+  {
     "__v": 0,
     "cat_metric": 2,
     "category": "context1",
@@ -342,7 +665,7 @@ Array [
     "var_name": "exten",
     "var_val": "_7.,n,Dial(PJSIP/\${EXTEN})",
   },
-  Object {
+  {
     "__v": 0,
     "cat_metric": 2,
     "category": "context1",
@@ -356,8 +679,8 @@ Array [
 `;
 
 exports[`AstMongo.ts with StaticConfig add identify as StaticConfigs 1`] = `
-Array [
-  Object {
+[
+  {
     "__v": 0,
     "cat_metric": 5,
     "category": "identify",
@@ -367,7 +690,7 @@ Array [
     "var_name": "endpoint",
     "var_val": "my_static_trunk",
   },
-  Object {
+  {
     "__v": 0,
     "cat_metric": 5,
     "category": "identify",
@@ -377,7 +700,7 @@ Array [
     "var_name": "match",
     "var_val": "203.0.113.1",
   },
-  Object {
+  {
     "__v": 0,
     "cat_metric": 5,
     "category": "identify",
@@ -387,7 +710,7 @@ Array [
     "var_name": "match",
     "var_val": "203.0.113.2",
   },
-  Object {
+  {
     "__v": 0,
     "cat_metric": 5,
     "category": "identify",
@@ -401,8 +724,8 @@ Array [
 `;
 
 exports[`AstMongo.ts with StaticConfig add transports as StaticConfigs 1`] = `
-Array [
-  Object {
+[
+  {
     "__v": 0,
     "cat_metric": 3,
     "category": "transport-tcp",
@@ -412,7 +735,7 @@ Array [
     "var_name": "type",
     "var_val": "transport",
   },
-  Object {
+  {
     "__v": 0,
     "cat_metric": 3,
     "category": "transport-tcp",
@@ -422,7 +745,7 @@ Array [
     "var_name": "protocol",
     "var_val": "tcp",
   },
-  Object {
+  {
     "__v": 0,
     "cat_metric": 3,
     "category": "transport-tcp",
@@ -432,7 +755,7 @@ Array [
     "var_name": "bind",
     "var_val": "0.0.0.0",
   },
-  Object {
+  {
     "__v": 0,
     "cat_metric": 4,
     "category": "transport-wss",
@@ -442,7 +765,7 @@ Array [
     "var_name": "type",
     "var_val": "transport",
   },
-  Object {
+  {
     "__v": 0,
     "cat_metric": 4,
     "category": "transport-wss",
@@ -452,7 +775,7 @@ Array [
     "var_name": "protocol",
     "var_val": "wss",
   },
-  Object {
+  {
     "__v": 0,
     "cat_metric": 4,
     "category": "transport-wss",
@@ -466,8 +789,8 @@ Array [
 `;
 
 exports[`AstMongo.ts with StaticConfig create a transport as StaticConfigs 1`] = `
-Array [
-  Object {
+[
+  {
     "__v": 0,
     "cat_metric": 1,
     "category": "transport-udp",
@@ -477,7 +800,7 @@ Array [
     "var_name": "type",
     "var_val": "transport",
   },
-  Object {
+  {
     "__v": 0,
     "cat_metric": 1,
     "category": "transport-udp",
@@ -487,7 +810,7 @@ Array [
     "var_name": "protocol",
     "var_val": "udp",
   },
-  Object {
+  {
     "__v": 0,
     "cat_metric": 1,
     "category": "transport-udp",
@@ -501,22 +824,22 @@ Array [
 `;
 
 exports[`AstMongo.ts with StaticConfig delete extensions 1`] = `
-Object {
-  "n": 6,
-  "ok": 1,
+{
+  "acknowledged": true,
+  "deletedCount": 1,
 }
 `;
 
 exports[`AstMongo.ts with StaticConfig delete pjsip 1`] = `
-Object {
-  "n": 13,
-  "ok": 1,
+{
+  "acknowledged": true,
+  "deletedCount": 1,
 }
 `;
 
 exports[`AstMongo.ts with StaticConfig read back extensions 1`] = `
-Array [
-  Object {
+[
+  {
     "__v": 0,
     "cat_metric": 2,
     "category": "context1",
@@ -526,7 +849,17 @@ Array [
     "var_name": "exten",
     "var_val": "_6.,1,NoOp()",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 0,
+    "var_name": "exten",
+    "var_val": "_6.,1,NoOp()",
+  },
+  {
     "__v": 0,
     "cat_metric": 2,
     "category": "context1",
@@ -536,7 +869,17 @@ Array [
     "var_name": "exten",
     "var_val": "_6.,n,Dial(PJSIP/\${EXTEN})",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 1,
+    "var_name": "exten",
+    "var_val": "_6.,n,Dial(PJSIP/\${EXTEN})",
+  },
+  {
     "__v": 0,
     "cat_metric": 2,
     "category": "context1",
@@ -546,7 +889,17 @@ Array [
     "var_name": "exten",
     "var_val": "_6.,n,Hangup()",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 2,
+    "var_name": "exten",
+    "var_val": "_6.,n,Hangup()",
+  },
+  {
     "__v": 0,
     "cat_metric": 2,
     "category": "context1",
@@ -556,7 +909,17 @@ Array [
     "var_name": "exten",
     "var_val": "_7.,1,NoOp()",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 3,
+    "var_name": "exten",
+    "var_val": "_7.,1,NoOp()",
+  },
+  {
     "__v": 0,
     "cat_metric": 2,
     "category": "context1",
@@ -566,7 +929,37 @@ Array [
     "var_name": "exten",
     "var_val": "_7.,n,Dial(PJSIP/\${EXTEN})",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 4,
+    "var_name": "exten",
+    "var_val": "_7.,n,Dial(PJSIP/\${EXTEN})",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 4,
+    "var_name": "exten",
+    "var_val": "_7.,n,Dial(PJSIP/\${EXTEN})",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 5,
+    "var_name": "exten",
+    "var_val": "_7.,n,Hangup()",
+  },
+  {
     "__v": 0,
     "cat_metric": 2,
     "category": "context1",
@@ -580,8 +973,8 @@ Array [
 `;
 
 exports[`AstMongo.ts with StaticConfig read back pjsip 1`] = `
-Array [
-  Object {
+[
+  {
     "__v": 0,
     "cat_metric": 1,
     "category": "transport-udp",
@@ -591,7 +984,17 @@ Array [
     "var_name": "type",
     "var_val": "transport",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 1,
+    "category": "transport-udp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "type",
+    "var_val": "transport",
+  },
+  {
     "__v": 0,
     "cat_metric": 1,
     "category": "transport-udp",
@@ -601,7 +1004,17 @@ Array [
     "var_name": "protocol",
     "var_val": "udp",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 1,
+    "category": "transport-udp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 1,
+    "var_name": "protocol",
+    "var_val": "udp",
+  },
+  {
     "__v": 0,
     "cat_metric": 1,
     "category": "transport-udp",
@@ -611,7 +1024,7 @@ Array [
     "var_name": "bind",
     "var_val": "0.0.0.0",
   },
-  Object {
+  {
     "__v": 0,
     "cat_metric": 3,
     "category": "transport-tcp",
@@ -621,7 +1034,17 @@ Array [
     "var_name": "type",
     "var_val": "transport",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 3,
+    "category": "transport-tcp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "type",
+    "var_val": "transport",
+  },
+  {
     "__v": 0,
     "cat_metric": 3,
     "category": "transport-tcp",
@@ -631,7 +1054,17 @@ Array [
     "var_name": "protocol",
     "var_val": "tcp",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 3,
+    "category": "transport-tcp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 1,
+    "var_name": "protocol",
+    "var_val": "tcp",
+  },
+  {
     "__v": 0,
     "cat_metric": 3,
     "category": "transport-tcp",
@@ -641,7 +1074,17 @@ Array [
     "var_name": "bind",
     "var_val": "0.0.0.0",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 3,
+    "category": "transport-tcp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 2,
+    "var_name": "bind",
+    "var_val": "0.0.0.0",
+  },
+  {
     "__v": 0,
     "cat_metric": 4,
     "category": "transport-wss",
@@ -651,7 +1094,17 @@ Array [
     "var_name": "type",
     "var_val": "transport",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 4,
+    "category": "transport-wss",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "type",
+    "var_val": "transport",
+  },
+  {
     "__v": 0,
     "cat_metric": 4,
     "category": "transport-wss",
@@ -661,7 +1114,17 @@ Array [
     "var_name": "protocol",
     "var_val": "wss",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 4,
+    "category": "transport-wss",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 1,
+    "var_name": "protocol",
+    "var_val": "wss",
+  },
+  {
     "__v": 0,
     "cat_metric": 4,
     "category": "transport-wss",
@@ -671,7 +1134,27 @@ Array [
     "var_name": "bind",
     "var_val": "0.0.0.0",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 4,
+    "category": "transport-wss",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 2,
+    "var_name": "bind",
+    "var_val": "0.0.0.0",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 4,
+    "category": "transport-wss",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 2,
+    "var_name": "bind",
+    "var_val": "0.0.0.0",
+  },
+  {
     "__v": 0,
     "cat_metric": 5,
     "category": "identify",
@@ -681,7 +1164,27 @@ Array [
     "var_name": "endpoint",
     "var_val": "my_static_trunk",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "endpoint",
+    "var_val": "my_static_trunk",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "endpoint",
+    "var_val": "my_static_trunk",
+  },
+  {
     "__v": 0,
     "cat_metric": 5,
     "category": "identify",
@@ -691,7 +1194,17 @@ Array [
     "var_name": "match",
     "var_val": "203.0.113.1",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 1,
+    "var_name": "match",
+    "var_val": "203.0.113.1",
+  },
+  {
     "__v": 0,
     "cat_metric": 5,
     "category": "identify",
@@ -701,7 +1214,37 @@ Array [
     "var_name": "match",
     "var_val": "203.0.113.2",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 2,
+    "var_name": "match",
+    "var_val": "203.0.113.2",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 3,
+    "var_name": "match",
+    "var_val": "203.0.113.3",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 3,
+    "var_name": "match",
+    "var_val": "203.0.113.3",
+  },
+  {
     "__v": 0,
     "cat_metric": 5,
     "category": "identify",
@@ -715,27 +1258,8 @@ Array [
 `;
 
 exports[`AstMongo.ts with StaticConfig read back to check #2 1`] = `
-Array [
-  Object {
-    "__cat_metric": Object {
-      "id": "000000000000000000000001",
-      "value": 5,
-    },
-    "__v": 0,
-  },
-]
-`;
-
-exports[`AstMongo.ts with StaticConfig read back to check 1`] = `
-Array [
-  Object {
-    "__cat_metric": Object {
-      "id": "000000000000000000000001",
-      "value": 5,
-    },
-    "__v": 0,
-  },
-  Object {
+[
+  {
     "__v": 0,
     "cat_metric": 1,
     "category": "transport-udp",
@@ -745,7 +1269,17 @@ Array [
     "var_name": "type",
     "var_val": "transport",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 1,
+    "category": "transport-udp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "type",
+    "var_val": "transport",
+  },
+  {
     "__v": 0,
     "cat_metric": 1,
     "category": "transport-udp",
@@ -755,7 +1289,17 @@ Array [
     "var_name": "protocol",
     "var_val": "udp",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 1,
+    "category": "transport-udp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 1,
+    "var_name": "protocol",
+    "var_val": "udp",
+  },
+  {
     "__v": 0,
     "cat_metric": 1,
     "category": "transport-udp",
@@ -765,7 +1309,127 @@ Array [
     "var_name": "bind",
     "var_val": "0.0.0.0",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 0,
+    "var_name": "exten",
+    "var_val": "_6.,1,NoOp()",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 0,
+    "var_name": "exten",
+    "var_val": "_6.,1,NoOp()",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 1,
+    "var_name": "exten",
+    "var_val": "_6.,n,Dial(PJSIP/\${EXTEN})",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 1,
+    "var_name": "exten",
+    "var_val": "_6.,n,Dial(PJSIP/\${EXTEN})",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 2,
+    "var_name": "exten",
+    "var_val": "_6.,n,Hangup()",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 2,
+    "var_name": "exten",
+    "var_val": "_6.,n,Hangup()",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 3,
+    "var_name": "exten",
+    "var_val": "_7.,1,NoOp()",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 3,
+    "var_name": "exten",
+    "var_val": "_7.,1,NoOp()",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 4,
+    "var_name": "exten",
+    "var_val": "_7.,n,Dial(PJSIP/\${EXTEN})",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 4,
+    "var_name": "exten",
+    "var_val": "_7.,n,Dial(PJSIP/\${EXTEN})",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 5,
+    "var_name": "exten",
+    "var_val": "_7.,n,Hangup()",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 5,
+    "var_name": "exten",
+    "var_val": "_7.,n,Hangup()",
+  },
+  {
     "__v": 0,
     "cat_metric": 3,
     "category": "transport-tcp",
@@ -775,7 +1439,17 @@ Array [
     "var_name": "type",
     "var_val": "transport",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 3,
+    "category": "transport-tcp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "type",
+    "var_val": "transport",
+  },
+  {
     "__v": 0,
     "cat_metric": 3,
     "category": "transport-tcp",
@@ -785,7 +1459,17 @@ Array [
     "var_name": "protocol",
     "var_val": "tcp",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 3,
+    "category": "transport-tcp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 1,
+    "var_name": "protocol",
+    "var_val": "tcp",
+  },
+  {
     "__v": 0,
     "cat_metric": 3,
     "category": "transport-tcp",
@@ -795,7 +1479,17 @@ Array [
     "var_name": "bind",
     "var_val": "0.0.0.0",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 3,
+    "category": "transport-tcp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 2,
+    "var_name": "bind",
+    "var_val": "0.0.0.0",
+  },
+  {
     "__v": 0,
     "cat_metric": 4,
     "category": "transport-wss",
@@ -805,7 +1499,17 @@ Array [
     "var_name": "type",
     "var_val": "transport",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 4,
+    "category": "transport-wss",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "type",
+    "var_val": "transport",
+  },
+  {
     "__v": 0,
     "cat_metric": 4,
     "category": "transport-wss",
@@ -815,7 +1519,17 @@ Array [
     "var_name": "protocol",
     "var_val": "wss",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 4,
+    "category": "transport-wss",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 1,
+    "var_name": "protocol",
+    "var_val": "wss",
+  },
+  {
     "__v": 0,
     "cat_metric": 4,
     "category": "transport-wss",
@@ -825,7 +1539,17 @@ Array [
     "var_name": "bind",
     "var_val": "0.0.0.0",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 4,
+    "category": "transport-wss",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 2,
+    "var_name": "bind",
+    "var_val": "0.0.0.0",
+  },
+  {
     "__v": 0,
     "cat_metric": 5,
     "category": "identify",
@@ -835,7 +1559,27 @@ Array [
     "var_name": "endpoint",
     "var_val": "my_static_trunk",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "endpoint",
+    "var_val": "my_static_trunk",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "endpoint",
+    "var_val": "my_static_trunk",
+  },
+  {
     "__v": 0,
     "cat_metric": 5,
     "category": "identify",
@@ -845,7 +1589,17 @@ Array [
     "var_name": "match",
     "var_val": "203.0.113.1",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 1,
+    "var_name": "match",
+    "var_val": "203.0.113.1",
+  },
+  {
     "__v": 0,
     "cat_metric": 5,
     "category": "identify",
@@ -855,7 +1609,442 @@ Array [
     "var_name": "match",
     "var_val": "203.0.113.2",
   },
-  Object {
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 2,
+    "var_name": "match",
+    "var_val": "203.0.113.2",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 3,
+    "var_name": "match",
+    "var_val": "203.0.113.3",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 3,
+    "var_name": "match",
+    "var_val": "203.0.113.3",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 3,
+    "var_name": "match",
+    "var_val": "203.0.113.3",
+  },
+]
+`;
+
+exports[`AstMongo.ts with StaticConfig read back to check 1`] = `
+[
+  {
+    "__v": 0,
+    "cat_metric": 1,
+    "category": "transport-udp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "type",
+    "var_val": "transport",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 1,
+    "category": "transport-udp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "type",
+    "var_val": "transport",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 1,
+    "category": "transport-udp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 1,
+    "var_name": "protocol",
+    "var_val": "udp",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 1,
+    "category": "transport-udp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 1,
+    "var_name": "protocol",
+    "var_val": "udp",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 1,
+    "category": "transport-udp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 2,
+    "var_name": "bind",
+    "var_val": "0.0.0.0",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 0,
+    "var_name": "exten",
+    "var_val": "_6.,1,NoOp()",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 0,
+    "var_name": "exten",
+    "var_val": "_6.,1,NoOp()",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 1,
+    "var_name": "exten",
+    "var_val": "_6.,n,Dial(PJSIP/\${EXTEN})",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 1,
+    "var_name": "exten",
+    "var_val": "_6.,n,Dial(PJSIP/\${EXTEN})",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 2,
+    "var_name": "exten",
+    "var_val": "_6.,n,Hangup()",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 2,
+    "var_name": "exten",
+    "var_val": "_6.,n,Hangup()",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 3,
+    "var_name": "exten",
+    "var_val": "_7.,1,NoOp()",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 3,
+    "var_name": "exten",
+    "var_val": "_7.,1,NoOp()",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 4,
+    "var_name": "exten",
+    "var_val": "_7.,n,Dial(PJSIP/\${EXTEN})",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 4,
+    "var_name": "exten",
+    "var_val": "_7.,n,Dial(PJSIP/\${EXTEN})",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 5,
+    "var_name": "exten",
+    "var_val": "_7.,n,Hangup()",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 2,
+    "category": "context1",
+    "commented": 0,
+    "filename": "extensions.conf",
+    "var_metric": 5,
+    "var_name": "exten",
+    "var_val": "_7.,n,Hangup()",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 3,
+    "category": "transport-tcp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "type",
+    "var_val": "transport",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 3,
+    "category": "transport-tcp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "type",
+    "var_val": "transport",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 3,
+    "category": "transport-tcp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 1,
+    "var_name": "protocol",
+    "var_val": "tcp",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 3,
+    "category": "transport-tcp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 1,
+    "var_name": "protocol",
+    "var_val": "tcp",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 3,
+    "category": "transport-tcp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 2,
+    "var_name": "bind",
+    "var_val": "0.0.0.0",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 3,
+    "category": "transport-tcp",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 2,
+    "var_name": "bind",
+    "var_val": "0.0.0.0",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 4,
+    "category": "transport-wss",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "type",
+    "var_val": "transport",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 4,
+    "category": "transport-wss",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "type",
+    "var_val": "transport",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 4,
+    "category": "transport-wss",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 1,
+    "var_name": "protocol",
+    "var_val": "wss",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 4,
+    "category": "transport-wss",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 1,
+    "var_name": "protocol",
+    "var_val": "wss",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 4,
+    "category": "transport-wss",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 2,
+    "var_name": "bind",
+    "var_val": "0.0.0.0",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 4,
+    "category": "transport-wss",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 2,
+    "var_name": "bind",
+    "var_val": "0.0.0.0",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 4,
+    "category": "transport-wss",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 2,
+    "var_name": "bind",
+    "var_val": "0.0.0.0",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "endpoint",
+    "var_val": "my_static_trunk",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "endpoint",
+    "var_val": "my_static_trunk",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 0,
+    "var_name": "endpoint",
+    "var_val": "my_static_trunk",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 1,
+    "var_name": "match",
+    "var_val": "203.0.113.1",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 1,
+    "var_name": "match",
+    "var_val": "203.0.113.1",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 2,
+    "var_name": "match",
+    "var_val": "203.0.113.2",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 2,
+    "var_name": "match",
+    "var_val": "203.0.113.2",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 3,
+    "var_name": "match",
+    "var_val": "203.0.113.3",
+  },
+  {
+    "__v": 0,
+    "cat_metric": 5,
+    "category": "identify",
+    "commented": 0,
+    "filename": "pjsip.conf",
+    "var_metric": 3,
+    "var_name": "match",
+    "var_val": "203.0.113.3",
+  },
+  {
     "__v": 0,
     "cat_metric": 5,
     "category": "identify",

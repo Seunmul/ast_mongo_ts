@@ -1,0 +1,87 @@
+require('dotenv').config();
+
+import {
+  AstMongo,
+  AstMongoOptions,
+  StaticProperties,
+  StaticModelHelper,
+  StaticModelHelperCB,
+  EndpointSet,
+  EndpointSetHelper,
+  EndpointSetHelperCB,
+} from './src/ast_mongo';
+//
+//
+//
+const unique_id = '000000000000000000000001';
+
+const ENV = process.env;
+const astMongoOptions = {
+  urls: {
+    config:
+      ENV.MONGO_CONFIG ||
+      ENV.npm_package_config_config ||
+      'mongodb://127.0.0.1:27017/config_test',
+    cdr:
+      ENV.MONGO_CDR ||
+      ENV.npm_package_config_cdr ||
+      'mongodb://127.0.0.1:27017/cdr_test',
+    cel:
+      ENV.MONGO_CEL ||
+      ENV.npm_package_config_cel ||
+      'mongodb://127.0.0.1:27017/cel_test',
+  },
+};
+
+let ast_mongo = AstMongo;
+let smh = StaticModelHelper;
+let esh = EndpointSetHelper;
+
+const bridgeDialplan = [
+  { exten: '_600X,1,NoOp(Extension ${EXTEN} is calling)' },
+  { same: 'n,Stasis(bridge,incoming,${EXTEN})' },
+  { same: 'n,Hangup()' },
+];
+
+const demo = [
+  { exten: '200,1,Answer()' },
+  { same: 'n,Playback(demo-congrats)' },
+  { same: 'n,Hangup()' },
+];
+async function createDialplan(Dialplan) {
+  const properties = await smh.create(
+    'extensions.conf',
+    'from-internal',
+    Dialplan
+  );
+  const results = await ast_mongo.Static.create(properties);
+  return results;
+}
+
+createDialplan(bridgeDialplan);
+createDialplan(demo);
+
+test('create ari dialplan', async () => {
+  const bridgeDialplan = [
+    { exten: '_600X,1,NoOp(Extension ${EXTEN} is calling)' },
+    { same: 'n,Stasis(bridge,incoming,${EXTEN})' },
+    { same: 'n,Hangup()' },
+  ];
+
+  const demo = [
+    { exten: '200,1,Answer()' },
+    { same: 'n,Playback(demo-congrats)' },
+    { same: 'n,Hangup()' },
+  ];
+
+  const properties = await smh.create('extensions.conf', 'from-internal', [
+    { exten: '_600X,1,NoOp(Extension ${EXTEN} is calling)' },
+    { same: 'n,Stasis(bridge,incoming,${EXTEN})' },
+    { same: 'n,Hangup()' },
+    { exten: '200,1,Answer()' },
+    { same: 'n,Playback(demo-congrats)' },
+    { same: 'n,Hangup()' },
+  ]);
+  const results = await ast_mongo.Static.create(properties);
+  return results;
+});

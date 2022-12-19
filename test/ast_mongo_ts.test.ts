@@ -54,9 +54,7 @@ function deleteId(data: any): object[] {
   }
   return results;
 }
-//
-//
-//
+
 describe('AstMongo.ts connection & disconnection', () => {
   test('construction', () => {
     ast_mongo = new AstMongo(astMongoOptions);
@@ -155,14 +153,14 @@ describe('AstMongo.ts with Aor', () => {
       expect(result).toMatchSnapshot();
     });
 
-    test('Remove it', async () => {
-      await ast_mongo.Aor.deleteOne({ _id: 'alice' });
-    });
+    // test('Remove it', async () => {
+    //   await ast_mongo.Aor.deleteOne({ _id: 'alice' });
+    // });
 
-    test('Check if it has been removed', async () => {
-      const result = await ast_mongo.Aor.findById('alice');
-      expect(result).toMatchSnapshot();
-    });
+    // test('Check if it has been removed', async () => {
+    //   const result = await ast_mongo.Aor.findById('alice');
+    //   expect(result).toMatchSnapshot();
+    // });
 
     test('disconnect', async () => {
       await ast_mongo.disconnect();
@@ -247,37 +245,49 @@ describe('AstMongo.ts with Endpoint Set', () => {
     const identifies = await ast_mongo.Identify.find({}).select('-_id');
     expect(identifies).toMatchSnapshot();
   });
-  test('clean up #1', async () => {
-    await ast_mongo.Endpoint.deleteOne({ _id: '6001' });
-    await ast_mongo.Aor.deleteOne({ _id: '6001' });
-    await ast_mongo.Auth.deleteOne({ _id: '6001' });
-    let result = await ast_mongo.Endpoint.find();
-    expect(result).toMatchSnapshot();
-    result = await ast_mongo.Aor.find();
-    expect(result).toMatchSnapshot();
-    result = await ast_mongo.Auth.find();
-    expect(result).toMatchSnapshot();
-  });
-  test('clean up #2', async () => {
-    await ast_mongo.Endpoint.deleteOne({ _id: '6002' });
-    await ast_mongo.Aor.deleteOne({ _id: '6002' });
-    await ast_mongo.Auth.deleteOne({ _id: '6002' });
-    let result = await ast_mongo.Endpoint.find();
-    expect(result).toMatchSnapshot();
-    result = await ast_mongo.Aor.find();
-    expect(result).toMatchSnapshot();
-    result = await ast_mongo.Auth.find();
-    expect(result).toMatchSnapshot();
-  });
-  test('clean up #3', async () => {
-    await ast_mongo.Identify.deleteOne({ endpoint: 'my_realtime_trunk' });
-    const result = await ast_mongo.Identify.find();
-    expect(result).toMatchSnapshot();
-  });
+  // test('clean up #1', async () => {
+  //   await ast_mongo.Endpoint.deleteOne({ _id: '6001' });
+  //   await ast_mongo.Aor.deleteOne({ _id: '6001' });
+  //   await ast_mongo.Auth.deleteOne({ _id: '6001' });
+  //   let result = await ast_mongo.Endpoint.find();
+  //   expect(result).toMatchSnapshot();
+  //   result = await ast_mongo.Aor.find();
+  //   expect(result).toMatchSnapshot();
+  //   result = await ast_mongo.Auth.find();
+  //   expect(result).toMatchSnapshot();
+  // });
+  // test('clean up #2', async () => {
+  //   await ast_mongo.Endpoint.deleteOne({ _id: '6002' });
+  //   await ast_mongo.Aor.deleteOne({ _id: '6002' });
+  //   await ast_mongo.Auth.deleteOne({ _id: '6002' });
+  //   let result = await ast_mongo.Endpoint.find();
+  //   expect(result).toMatchSnapshot();
+  //   result = await ast_mongo.Aor.find();
+  //   expect(result).toMatchSnapshot();
+  //   result = await ast_mongo.Auth.find();
+  //   expect(result).toMatchSnapshot();
+  // });
+  // test('clean up #3', async () => {
+  //   await ast_mongo.Identify.deleteOne({ endpoint: 'my_realtime_trunk' });
+  //   const result = await ast_mongo.Identify.find();
+  //   expect(result).toMatchSnapshot();
+  // });
   test('disconnect', async () => {
     await ast_mongo.disconnect();
   });
 });
+
+const bridgeDialplan = [
+  { exten: '_600X,1,NoOp(Extension ${EXTEN} is calling)' },
+  { same: 'n,Stasis(bridge,incoming,${EXTEN})' },
+  { same: 'n,Hangup()' },
+];
+
+const demo = [
+  { exten: '200,1,Answer()' },
+  { same: 'n,Playback(demo-congrats)' },
+  { same: 'n,Hangup()' },
+];
 
 describe('AstMongo.ts with StaticConfig', () => {
   beforeAll(async () => {
@@ -379,6 +389,7 @@ describe('AstMongo.ts with StaticConfig', () => {
     );
     expect(deleteId(results)).toMatchSnapshot();
   });
+
   test('disconnect', async () => {
     await ast_mongo.disconnect();
   });
